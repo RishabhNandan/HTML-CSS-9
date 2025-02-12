@@ -1,0 +1,347 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(246, 248, 248);
+}
+
+header{
+  background-color: blue;
+  padding-left: 60px;
+  height: 70vh;
+}
+nav{
+  margin-left: 65%;
+  color: white;
+  font-size: 13px;
+  padding-top: 20px;
+}
+nav .nav-item{
+  padding: 14px;
+  cursor: pointer;
+ 
+}
+.nav-item-active{
+  background-color: white;
+  border: 1px solid white ;
+  color: rgb(70, 23, 254);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-items{
+  margin-left: 20px;
+}
+.header-text{
+  position: absolute;
+  margin-top: 90px;
+  color: white;
+}
+.header-text h2{
+  font-size: 40px;
+}
+.header-text p{
+  margin-top: 20px;
+}
+.header-image{
+  float: right;
+  margin-top: -10px;
+  height:35rem;
+}
+.companies{
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin-left: 70px; 
+  margin-top: 30px;
+  
+}
+.company-items{
+  font-family: "Righteous",sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+}
+.api{
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 85%;
+}
+.api-heading{
+  font-family: "Poppins",sans-serif;
+  font-weight:bolder;
+  font-size: 40px;
+}
+ .cards{
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+  gap: 20px;
+
+}
+.card-active{
+  cursor: pointer;
+  width: 250px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 15px 3px rgb(0, 0, 0,.04);
+  border-radius: 20px;
+  padding: 40px 20px;
+  color: rgb(62, 15, 252);
+}
+.card{
+  padding: 40px 20px;
+}
+.card h3{
+  margin-top: 15px;
+}
+.card p{
+  margin-top: 10px;
+  color: black;
+  font-size: 13px;
+}
+
+.card:last-child::after{
+  content: ">";
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  background-color: rgb(62, 14, 254);
+  font-size: 35px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: 0.5px;
+  top: 80px;
+}
+
+.blog-heading{
+  margin-top: 100px;
+  padding-left: 60px;
+  font-weight: 900;
+  font-family: "Poppins",sans-serif;
+  
+}
+.blog-heading h1{
+  font-size: 40px;
+}
+.blog-cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 190vh;
+  margin-top: 24px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.blog-card{
+  position: relative;
+  background-color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-top-left-radius:70px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 0 15px 3px rgb(0, 0, 0 ,0.4);
+  height: 288px;
+}
+.blog-image{
+  display: inline-block;
+}
+
+.blog-content{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+.blog-content h6{
+  color: blue;
+  font-weight: 700;
+}
+.blog-content h3{
+  padding-top: 20px;
+  font-weight: 900;
+  margin-bottom:15px;
+}
+.blog-content small{
+  font-size: 10px;
+  font-weight: 900;
+}
+.blog-bottom{
+  position: absolute;
+  display: flex;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 60px;
+  left: 300px;
+  bottom: -20px;
+}
+.blog-author{
+  position: absolute;
+  left: 180px;
+  font-size: 10px;
+  font-weight: 900;
+  width: 100px;
+  bottom: 2px;
+}
+.faq-section{
+  background-color: rgb(233, 237, 255);
+  display: flex;
+  background-size: contain;
+  margin-top: 100px;
+  height: 350px;
+}
+.faq-content{
+  padding-left: 60px;
+}
+.faq-content h2{
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 40px;
+  line-height: 50px;
+  font-family: "Poppins",sans-serif;
+}
+.faq-content h4{
+  font-size: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+.faq-image{
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  margin-left: 30%;
+  right: 0;
+  height: 350px;
+}
+.faq-section .faq-content h2 ~ h4:not(:first-of-type){
+  font-size: 1rem;
+  padding-top: 15px;
+}
+button{
+  background-color: rgb(90, 49, 252);
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  padding: 14px;
+  color: white;
+  margin-top: 20px;
+  font-size: 10px;
+}
+.download-section{
+  display: flex;
+  height: 50vh;
+  flex-wrap: wrap;
+}
+
+.download-content h1{
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 50%;
+  padding-left: 60px;
+  text-align: center;
+  font-family: "Poppins" ,sans-serif;
+}
+.download-content span{
+  font-size: 30px;
+  font-weight: 100;
+  padding-top: 50%;
+  text-align: center;
+}
+.download-email{
+  position: absolute;
+  padding-top: 10%;
+}
+form{
+  margin-left: 100vh;
+}
+input{
+  width: 450px;
+  position: absolute;
+  outline: none;
+  background-color: rgb(233, 237, 255);
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+}
+form input::placeholder{
+  font-weight: 600;
+  color: #505050;
+  font-size: 12px;
+}
+.download-section button{
+  position: relative;
+  margin-left: 47vh;
+  margin-top: 1%;
+  border-radius: 50px;
+  background-color: rgb(90, 49, 252);
+  border: none;
+  padding: 10px;
+  width: 130px;
+}
+
+.footer-section{
+  background-color: #4212ff;
+  display: flex;
+  height: 40vh;
+  padding-left: 60px;
+}
+.footer-left{
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.list{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-weight: 100;
+  font-size: 14px;
+  color: white;
+}
+.footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after{
+  content: "";
+  display: inline-block;
+  background-color: white;
+  width: 1px;
+  height: 50%;
+  margin-left: 20px;
+}
+.footer-right{
+  margin-top: 60px;
+  padding-left:300px;
+  text-align: right;
+}
+.footer-logos{
+  margin-right: 18px;
+}
+.logos-list{
+  display: flex;
+  padding-left: 280px;
+  list-style-type: none;
+  gap: 30px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100px;
+  padding-top: 20px;
+}
+.footer-right .logos-list .list-items:not(:last-child)::after{
+  content: "";
+  display: inline-block;
+  background-color: white;
+  width: 1px;
+  height: 50%;
+  margin-left: 20px;
+}
